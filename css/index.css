@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:linear-gradient(135deg,#ff6ec7,#6a5cff,#00d4ff);
+    min-height:100vh;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.main-menu{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,0.2);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.card h2{
+    margin-bottom:20px;
+}
+
+.course-btn{
+    margin-top:20px;
+}
+
+.modal{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    color:black;
+    width:90%;
+    max-width:400px;
+    padding:30px;
+    border-radius:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.logout-btn{
+    display:none;
+    background:red;
+    color:white;
+}
+
+.course-page{
+    display:none;
+    min-height:100vh;
+    padding:20px;
+}
+
+.facebook-page{
+    background:#1877f2;
+}
+
+.whatsapp-page{
+    background:#25d366;
+}
+
+.course-content{
+    background:white;
+    color:black;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+}
+
+.payment-section,
+.lessons-section{
+    display:none;
+    margin-top:20px;
+}
+
+.back-btn{
+    margin-top:20px;
+}
+
+@media(max-width:700px){
+
+    .card{
+        width:100%;
+    }
+
+}

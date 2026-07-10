@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilustración Creativa</title>
+    <link rel="stylesheet" type="text/css" href="css/dibu1.css">
+</head>
+<body>
+
+<div class="curso">
+
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="banner">
+
+    <div class="contenido">
+
+        <h1>Ilustración Creativa</h1>
+
+        <p class="descripcion">
+            Desarrolla tu estilo artístico, aprende composición visual y crea ilustraciones únicas llenas de creatividad.
+        </p>
+
+        <div class="info">
+            <p>🎨 <strong>Duración:</strong> 8 semanas</p>
+            <p>💻 <strong>Modalidad:</strong> Presencial y Online</p>
+            <p>📈 <strong>Nivel:</strong> Intermedio</p>
+        </div>
+
+        <h2>¿Qué aprenderás?</h2>
+
+        <ul>
+            <li>Diseño de personajes</li>
+            <li>Composición visual</li>
+            <li>Teoría del color</li>
+            <li>Ilustración digital básica</li>
+            <li>Desarrollo de estilo propio</li>
+        </ul>
+
+        <button class="btn-inscribirse">Inscribirme</button>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="overlay" id="overlay"></div>
+
+<div class="modal" id="modal">
+    <h3>Datos de Compra</h3>
+   <form id="formCompra" method="POST">
+    <input type="hidden" name="curso_id" value="5">
+
+<label>Nombre completo:</label>
+<input type="text" name="nombre" required>
+
+<label>Correo electrónico:</label>
+<input type="email" name="email" required>
+
+<label>Método de pago:</label>
+<select id="metodoPago" required>
+    <option value="">Seleccionar</option>
+    <option value="tarjeta">Tarjeta</option>
+    <option value="transferencia">Transferencia</option>
+    <option value="paypal">PayPal</option>
+</select>
+   <div id="seccionPago" style="display:none; margin-top:15px;">
+
+    <!-- TARJETA -->
+    <div id="tarjetaCampos" style="display:none;">
+        <h4>Datos de Tarjeta</h4>
+        <input type="text" id="numTarjeta" placeholder="Número de tarjeta"><br><br>
+        <input type="month" id="fechaTarjeta"><br><br>
+        <input type="text" id="cvvTarjeta" placeholder="CVV"><br><br>
+    </div>
+
+    <!-- TRANSFERENCIA -->
+    <div id="transferenciaCampos" style="display:none;">
+        <h4>Datos de Transferencia</h4>
+        <input type="text" id="nombreBanco" placeholder="Nombre del banco"><br><br>
+        <input type="text" id="numReferencia" placeholder="Número de referencia"><br><br>
+    </div>
+
+    <!-- PAYPAL -->
+    <div id="paypalCampos" style="display:none;">
+        <h4>Correo PayPal</h4>
+        <input type="email" id="correoPaypal" placeholder="Correo PayPal"><br><br>
+    </div>
+
+    <hr>
+
+    <p><strong>Precio base:</strong> $300 MXN</p>
+    <p id="precioFinal"></p>
+
+    <button type="button" id="btnConfirmarPago" style="display:none;">
+        Confirmar Pago
+    </button>
+
+</div>
+
+<label>¿Eres Estudiante?</label>
+<select id="esEstudiante" required>
+	<option value="">Seleccionar</option>
+	<option value="si">Si</option>
+	<option value="no">No</option>
+</select>
+
+<div id="nivelContainer" style="display:none;">
+	<label>Nivel de Estudios</label>
+	<select id="nivelEstudios">
+		<option value="">Seleccionar</option>
+		<option value="secundaria">Secundaria (20% descuento)</option>
+		<option value="prepa">Preparatoria (15% descuento)</option>
+		<option value="universidad"> Universidad (10% descuento)</option>
+	</select>
+    <span id="descuentoTexto"></span>
+</div>
+
+<button type="submit">Confirmar Inscripción</button>
+<div id="mensajeEstado" style="text-align: center; margin-top:10px ; font-weight: bold;"></div>
+
+</form>
+
+<span class="cerrar" id="cerrarModal">X</span>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
