@@ -1,0 +1,65 @@
+/* css/aula.css - Diseño Premium */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f 0%, #29294d 100%);
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aula-container {
+    background: rgba(255, 255, 255, 0.05); /* Efecto vidrio */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 850px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #00d2ff, #9d50bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.video-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 3px solid rgba(255,255,255,0.1);
+}
+
+.info-box {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    border-left: 5px solid #00d2ff;
+}
+
+.btn-volver {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(45deg, #00d2ff, #9d50bb);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-volver:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(157, 80, 187, 0.6);
+}
